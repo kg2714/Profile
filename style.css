@@ -1,0 +1,88 @@
+body,
+html {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-size: cover;
+}
+
+main {
+  position: relative;
+  filter: blur(50px);
+  opacity: 0;
+  transition: filter 3s cubic-bezier(0.075, 0.82, 0.165, 0.75), opacity 2s ease-in-out;
+}
+
+#bg-video {
+  z-index: 0;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+  opacity: 0.75;
+  filter: contrast(100%) saturate(90%);
+}
+
+header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  align-items: center;
+  /* opacity: 0; */
+  
+}
+
+header > h1 {
+  color: rgba(218, 46, 132, 170);
+  font-family: Fira Code, Menlo, Consolas, Roboto Mono, monospace;
+  font-size: 24px;
+  margin: 1em auto;
+  padding: 2px 10px;
+  letter-spacing: 0;
+}
+
+header > img {
+  border-radius: 100%;
+  width: 8em;
+  height: 8em;
+  box-shadow: 0 0 0.5em rgba(218, 46, 132, 90);
+}
+
+ul {
+  list-style: none;
+  padding: 2em;
+  margin: auto;
+  max-width: 30em;
+}
+
+ul > li {
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 30em;
+  margin: 1em 0;
+  padding:1.5em 0.75em;
+  text-align: center;
+  font-family: Quicksand, sans-serif;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: rgb(255, 255, 255);
+  backdrop-filter: blur(10px) saturate(200%) contrast(130%);
+  --webkit-backdrop-filter: blur(10px) saturate(200%) contrast(130%);
+  gap: 0.75em;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+ul > li > span {
+    color: rgb(109, 255, 199)
+}
